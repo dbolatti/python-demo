@@ -2,14 +2,14 @@ import smtplib, ssl, csv
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-sender_email = "no-reply@gfe.frre.utn.edu.ar"
+sender_email = "no-reply@domain.com"
 password = input("Type your password and press enter:")
 
 # Create the plain-text and HTML version of your message
 text = """\
 Estimado: {nombres} {apellido} 
 Su nueva cuenta de Goole For Education es {cuenta} 
-Clave temporal: Temporal123 
+Clave temporal: ********* 
 Acceder vía: https://gsuite.google.com/dashboard
 """
 
@@ -37,7 +37,7 @@ html = """\
                             <td style="padding: 20px 0 30px 0;"><b>Estimada/o: </b> {nombres} {apellido} su nueva cuenta de Goole For Education es: {cuenta}</td>
                         </tr>
                         <tr>
-                            <td>Clave temporal: Temporal123 (se solicita el cambio en el primer inicio de sesion) <br> URL de acceso: https://gsuite.google.com/dashboard</td>
+                            <td>Clave temporal: ********* (se solicita el cambio en el primer inicio de sesion) <br> URL de acceso: https://gsuite.google.com/dashboard</td>
                         </tr>
                     </table>
                 </td>
