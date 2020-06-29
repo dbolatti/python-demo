@@ -8,7 +8,7 @@ password = input("Type your password and press enter:")
 # Create the plain-text and HTML version of your message
 text = """\
 Estimado: {nombres} {apellido} 
-Su nueva cuenta de Goole For Education es {cuenta} 
+Su nueva cuenta de Google For Education es {cuenta} 
 Clave temporal: ********* 
 Acceder vía: https://gsuite.google.com/dashboard
 """
@@ -34,7 +34,7 @@ html = """\
                             <td><h2>ALTA de cuenta</h2></td>
                         </tr>
                         <tr>
-                            <td style="padding: 20px 0 30px 0;"><b>Estimada/o: </b> {nombres} {apellido} su nueva cuenta de Goole For Education es: {cuenta}</td>
+                            <td style="padding: 20px 0 30px 0;"><b>Estimada/o: </b> {nombres} {apellido} su nueva cuenta de Google For Education es: {cuenta}</td>
                         </tr>
                         <tr>
                             <td>Clave temporal: ********* (se solicita el cambio en el primer inicio de sesion) <br> URL de acceso: https://gsuite.google.com/dashboard</td>
@@ -47,7 +47,7 @@ html = """\
             </tr>
                 <td><table border="0" cellpadding="0" cellspacing="0">
                         <tr>
-                            <td><a href="http://www.frre.utn.edu.ar"><img src="http://www.frre.utn.edu.ar/public/themes/utn/images/UTN_FRRE-www.png" alt="FRRe" border="0" /></a></td>
+                            <td><a href="http://www.domain.com"><img src="http://www.domain.com/www.png" alt="img" border="0" /></a></td>
                             <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
                             <td></td>
                         </tr>
