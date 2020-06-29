@@ -46,7 +46,7 @@ header_ps = ['nombres','apellido','cuenta','dpto','mail']
 cuentas_ps_writer.writerow(header_ps)
 
 #Paso las cuentas
-line_out_gfe =  ['name', 'surname','mail','Temporal123','','/SA/','','mail','','mail','','','','','','','','','','','','','','','','true','']
+line_out_gfe =  ['name', 'surname','mail','*********','','/SA/','','mail','','mail','','','','','','','','','','','','','','','','true','']
 
 #Cuento las lineas para evitar el encabezado original
 line_count = 0
