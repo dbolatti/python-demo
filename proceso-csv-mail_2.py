@@ -3,18 +3,18 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 
-sender_email = "no-reply@gfe.frre.utn.edu.ar"
-password = input("Ingrese contraseña [no-reply@gfe.frre.utn.edu.ar]:")
+sender_email = "no-reply@domain.com"
+password = input("Ingrese contraseña [no-reply@domain.com]:")
 
 # Create the plain-text and HTML version of your message
 text = """\
 Estimado: {nombres} {apellido} 
 Su nueva cuenta de Goole For Education es {cuenta} 
-Clave temporal: Temporal123 
+Clave temporal: ********** 
 Acceder vía: https://gsuite.google.com/dashboard
 Otros enlaces:
-- Mail: http://mail.google.com/a/gfe.frre.utn.edu.ar
-- Classroom: https://classroom.google.com/a/gfe.frre.utn.edu.ar
+- Mail: http://mail.google.com/a/domain.com
+- Classroom: https://classroom.google.com/a/domain.com
 - Meet: https://meet.google.com
 - Capacitacion en G-Suite: https://teachercenter.withgoogle.com/training
 """
@@ -40,19 +40,19 @@ html = """\
                             <td><h2>ALTA de cuenta</h2></td>
                         </tr>
                         <tr>
-                            <td style="padding: 20px 0 30px 0;"><b>Estimada/o: </b> {nombres} {apellido} su nueva cuenta de Goole para Centros Educativos es: {cuenta}</td>
+                            <td style="padding: 20px 0 30px 0;"><b>Estimada/o: </b> {nombres} {apellido} su nueva cuenta de Google para Centros Educativos es: {cuenta}</td>
                         </tr>
                         <tr>
-                            <td>Clave temporal: Temporal123 (se solicita el cambio en el primer inicio de sesion) <br> URL de acceso: <a href="https://gsuite.google.com/dashboard">https://gsuite.google.com/dashboard</a></td>
+                            <td>Clave temporal: *********** (se solicita el cambio en el primer inicio de sesion) <br> URL de acceso: <a href="https://gsuite.google.com/dashboard">https://gsuite.google.com/dashboard</a></td>
                         </tr>
                         <tr>
                             <td><h2>Otros enlaces</h2></td>
                         </tr>
                         <tr>
-                            <td>Mail: <a href="http://mail.google.com/a/gfe.frre.utn.edu.ar">http://mail.google.com/a/gfe.frre.utn.edu.ar</a></td>
+                            <td>Mail: <a href="http://mail.google.com/a/domain.com">http://mail.google.com/a/domain.com</a></td>
                         </tr>
                         <tr>
-                            <td>Classroom: <a href="https://classroom.google.com/a/gfe.frre.utn.edu.ar">https://classroom.google.com/a/gfe.frre.utn.edu.ar</a></td>
+                            <td>Classroom: <a href="https://classroom.google.com/a/domain.com">https://classroom.google.com/a/domain.com</a></td>
                         </tr>
                         <tr>
                             <td>Meet: <a href="https://meet.google.com">https://meet.google.com</a></td>
@@ -68,7 +68,7 @@ html = """\
             </tr>
                 <td><table border="0" cellpadding="0" cellspacing="0">
                         <tr>
-                            <td><a href="http://www.frre.utn.edu.ar"><img src="http://www.frre.utn.edu.ar/public/themes/utn/images/UTN_FRRE-www.png" alt="FRRe" border="0" /></a></td>
+                            <td><a href="http://www.domain.com"><img src="http://www.domain.com/www.png" alt="img" border="0" /></a></td>
                             <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
                             <td></td>
                         </tr>
